@@ -1,0 +1,10 @@
+D:\ACEL_PF\Exercises\WinForm\SecondDegreeEquation\bin\Debug\SecondDegreeEquation.exe.config
+D:\ACEL_PF\Exercises\WinForm\SecondDegreeEquation\bin\Debug\SecondDegreeEquation.exe
+D:\ACEL_PF\Exercises\WinForm\SecondDegreeEquation\bin\Debug\SecondDegreeEquation.pdb
+D:\ACEL_PF\Exercises\WinForm\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.csproj.AssemblyReference.cache
+D:\ACEL_PF\Exercises\WinForm\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.Form1.resources
+D:\ACEL_PF\Exercises\WinForm\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.Properties.Resources.resources
+D:\ACEL_PF\Exercises\WinForm\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.csproj.GenerateResource.cache
+D:\ACEL_PF\Exercises\WinForm\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.csproj.CoreCompileInputs.cache
+D:\ACEL_PF\Exercises\WinForm\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.exe
+D:\ACEL_PF\Exercises\WinForm\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.pdb
