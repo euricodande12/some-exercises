@@ -8,3 +8,13 @@ D:\ACEL_PF\Exercises\WinForm\SecondDegreeEquation\obj\Debug\SecondDegreeEquation
 D:\ACEL_PF\Exercises\WinForm\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.csproj.CoreCompileInputs.cache
 D:\ACEL_PF\Exercises\WinForm\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.exe
 D:\ACEL_PF\Exercises\WinForm\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.pdb
+C:\laragon\www\some-exercises\desktop-applications\SecondDegreeEquation\bin\Debug\SecondDegreeEquation.exe.config
+C:\laragon\www\some-exercises\desktop-applications\SecondDegreeEquation\bin\Debug\SecondDegreeEquation.exe
+C:\laragon\www\some-exercises\desktop-applications\SecondDegreeEquation\bin\Debug\SecondDegreeEquation.pdb
+C:\laragon\www\some-exercises\desktop-applications\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.csproj.AssemblyReference.cache
+C:\laragon\www\some-exercises\desktop-applications\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.Form1.resources
+C:\laragon\www\some-exercises\desktop-applications\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.Properties.Resources.resources
+C:\laragon\www\some-exercises\desktop-applications\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.csproj.GenerateResource.cache
+C:\laragon\www\some-exercises\desktop-applications\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.csproj.CoreCompileInputs.cache
+C:\laragon\www\some-exercises\desktop-applications\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.exe
+C:\laragon\www\some-exercises\desktop-applications\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.pdb
