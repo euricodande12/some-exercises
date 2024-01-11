@@ -18,3 +18,4 @@ C:\laragon\www\some-exercises\desktop-applications\SecondDegreeEquation\obj\Debu
 C:\laragon\www\some-exercises\desktop-applications\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.csproj.CoreCompileInputs.cache
 C:\laragon\www\some-exercises\desktop-applications\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.exe
 C:\laragon\www\some-exercises\desktop-applications\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.pdb
+C:\laragon\www\some-exercises\desktop-applications\SecondDegreeEquation\obj\Debug\SecondDegreeEquation.CalculationsForm.resources

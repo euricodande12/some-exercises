@@ -57,7 +57,8 @@ namespace SecondDegreeEquation
 
         private void BtnCalculate_Click(object sender, EventArgs e)
         {
-            txtTheEquationDescribedWas.Text = "The equation described was:";
+            double dblX, dblX1, dblX2;
+
             //Turning off the visibility of certains textboxes
             TurningOffTheVisibility(txtTheEquationDescribedWas);
             TurningOffTheVisibility(txtTheEquation);
@@ -72,6 +73,11 @@ namespace SecondDegreeEquation
             TurningOffTheVisibility(txtValueOfX1);
             TurningOffTheVisibility(txtX2);
             TurningOffTheVisibility(txtValueOfX2);
+
+            if (BtnSeeTheCalculations.Enabled == true)
+            {
+                BtnSeeTheCalculations.Enabled = false;
+            }
 
             int [] intValues = new int[3] {Convert.ToInt16(nudValueOfA.Value), Convert.ToInt16(nudValueOfB.Value), Convert.ToInt16(nudValueOfC.Value) };
             
@@ -128,20 +134,53 @@ namespace SecondDegreeEquation
                     if (intDiscriminant < 0)
                     {
                         MessageBox.Show("A negative discriminant indicates that neither of the solutions are real numbers.", "The discriminant is negative", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        if (BtnSeeTheCalculations.Enabled == true)
+                        {
+                            BtnSeeTheCalculations.Enabled = false;
+                        }
                     }
                     else if (intDiscriminant > 0)
                     {
                         MessageBox.Show("A positive discriminant indicates that the quadratic has two distinct real number solutions.", "The discriminant is positive", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                        double squareRootOfDiscriminant = Math.Sqrt(intDiscriminant);
+
+                        dblX1 = (-(intValues[1]) + squareRootOfDiscriminant) / (2 * intValues[0]);
+                        dblX2 = (-(intValues[1]) - squareRootOfDiscriminant) / (2 * intValues[0]);
+
+                        txtValueOfX1.Text = dblX1.ToString();
+                        txtValueOfX2.Text = dblX2.ToString();
+
+                        TurningOnTheVisibility(txtX1);
+                        TurningOnTheVisibility(txtValueOfX1);
+                        TurningOnTheVisibility(txtX2);
+                        TurningOnTheVisibility(txtValueOfX2);
+
+                        if (BtnSeeTheCalculations.Enabled == false)
+                        {
+                            BtnSeeTheCalculations.Enabled = true;
+                        }
                     }
                     else
                     {
                         MessageBox.Show("A discriminant of zero indicates that the quadratic has a repeated real number solution.", "The discriminant is zero", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        dblX = -(intValues[1]) / (2 * intValues[0]);
+                        txtValueOfX.Text = dblX.ToString();
+
+                        TurningOnTheVisibility(txtX);
+                        TurningOnTheVisibility(txtValueOfX);
+
+                        if (BtnSeeTheCalculations.Enabled == false)
+                        {
+                            BtnSeeTheCalculations.Enabled = true;
+                        }
                     }
 
                     ChangingTheTextOfTheTextBox(txtTheDiscriminant, $"{intDiscriminant}");
 
-                    if ((intValues[1] == 0))
+                    if (intValues[1] == 0)
                     {
                         //Changing the texts
                         ChangingTheTextOfTheTextBox(txtTheEquation, intValues[0] < 0 ? $"-{intValues[0]}x²{strValueOfC}= 0" : $"{intValues[0]}x²{strValueOfC}= 0");
@@ -171,6 +210,12 @@ namespace SecondDegreeEquation
                     TurningOnTheVisibility(txtResultDescription);
                 }
             }
+        }
+
+        private void BtnSeeTheCalculations_Click(object sender, EventArgs e)
+        {
+            Form calculationsForms = new CalculationsForm();
+            calculationsForms.ShowDialog();
         }
     }
 }

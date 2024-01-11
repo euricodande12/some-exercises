@@ -49,6 +49,7 @@
             this.txtValueOfX = new System.Windows.Forms.TextBox();
             this.txtX = new System.Windows.Forms.TextBox();
             this.txtResultDescription = new System.Windows.Forms.TextBox();
+            this.BtnSeeTheCalculations = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudValueOfA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudValueOfB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudValueOfC)).BeginInit();
@@ -334,11 +335,23 @@
             this.txtResultDescription.Text = "The discriminant is positive, so we have two x values:";
             this.txtResultDescription.Visible = false;
             // 
+            // BtnSeeTheCalculations
+            // 
+            this.BtnSeeTheCalculations.Enabled = false;
+            this.BtnSeeTheCalculations.Location = new System.Drawing.Point(478, 30);
+            this.BtnSeeTheCalculations.Name = "BtnSeeTheCalculations";
+            this.BtnSeeTheCalculations.Size = new System.Drawing.Size(219, 30);
+            this.BtnSeeTheCalculations.TabIndex = 21;
+            this.BtnSeeTheCalculations.Text = "See the calculations";
+            this.BtnSeeTheCalculations.UseVisualStyleBackColor = true;
+            this.BtnSeeTheCalculations.Click += new System.EventHandler(this.BtnSeeTheCalculations_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(748, 383);
+            this.Controls.Add(this.BtnSeeTheCalculations);
             this.Controls.Add(this.txtResultDescription);
             this.Controls.Add(this.txtValueOfX);
             this.Controls.Add(this.txtX);
@@ -399,6 +412,7 @@
         private System.Windows.Forms.TextBox txtValueOfX;
         private System.Windows.Forms.TextBox txtX;
         private System.Windows.Forms.TextBox txtResultDescription;
+        private System.Windows.Forms.Button BtnSeeTheCalculations;
     }
 }
 
